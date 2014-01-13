@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Visualization</title>
+    <meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+    <link href='css/big.css' rel='stylesheet' type='text/css' />
+    <link href='css/prettify.css' rel='stylesheet' type='text/css' />
+    <script src='libs/big.js'></script>
+    <script src='libs/prettify.js'></script>
+    <style type='text/css'>
+        @import url('css/open-sans.css');
+        body {
+            font-family: 'Open Sans';
+            background: #CDCDCD;
+            background-repeat:no-repeat;
+            background-size:cover;
+            color: #545454;
+        }
+        ul {
+            list-style-type: none;
+        }
+        div.imageText {
+          text-shadow:0px 0px 5px rgba(0,0,0,0.2);
+          color: #FFF;
+        }
+        em.navy {
+          font-style:normal;
+          color:#000033;
+        }
+        em.orange {
+          font-style:normal;
+          color:#FFA500;
+        }
+        em.dark-red {
+          font-style:normal;
+          color:#800000;
+        }
+        em.light-blue {
+          font-style:normal;
+          color:#5BA4C5;
+        }
+        a {
+          color:#CDCDCD;
+          text-decoration:none;
+        }
+        a.navy { 
+          background:#000033;
+        }
+        a.orange {
+          background: #FF8000;
+        }
+        a.dark-red {
+          background: #800000;
+        }
+    </style>
+</head>
+<div><img src='images/radar.png' /><em class='dark-red'>Weather Visualization</em></div>
+<div><img src='images/may20.png' />
+    <ul>
+        <li><em class='navy'>Jordan Rousseau</em></li>
+        <li><em class='light-blue'>@jvrousseau</em></li>
+        <li><em class='light-blue'>jrousseau@wdtinc.com</em></li>
+    </ul>
+</div>
+<div><img src='images/wdt.png' />
+    <ul>
+        <li><em class='light-blue'>Weather Decision Technologies</em></li>
+        <li>@weatherdectech</li>
+        <li>founded 2000</li>
+        <li>80 employees and counting</li>
+        <li>south research campus at ou</li>
+        <li>40+ phd/masters in meteorology/cs</li>
+    </ul>
+</div>
+<div><img src='images/wxops.png' />play with weather data <em class='orange'>every day</em></div>
+<div>
+    <ul>
+        <li><em>WDT's Clients</em></li>
+        <li>Digital Media</em></li>
+        <li>Enterprise</li>
+        <li>International Governments</li>
+        <li>Insurance</li>
+        <li>Consumers</li>
+    </ul>
+</div>
+<div>mapping</div>
+<div>
+    <ul>
+        <li><em class='light-blue'>Saturated Market</em></li>
+        <li>Google</li>
+        <li>Bing</li>
+        <li>MapQuest</li>
+        <li>Mapstraction</li>
+        <li>ArcGIS</li>
+        <li>Modest Maps</li>
+        <li>Nokia Maps</li>
+        <li>Yandex Maps</li>
+        <li>jVectorMap</li>
+        <li>Polymaps</li>
+    </ul>
+</div>
+<div><img src='images/mapping.png' />
+    mapping 
+    <span style='margin-left:25%;'><img src='images/provider.png' style='width:640px;'/></span>
+</div>
+<div><img src='images/tile.png' />
+    <em class='dark-red'>tiles</em>
+</div>
+<div><img src='images/zoom-0.png' />
+    <ul>
+        <li><em class='dark-red'>quick review of tile-based mapping</em></li>
+        <li><em class='navy'>1 tile = 256x256px</em></li>
+        <li>number of tiles at zoom level(z) = 4<sup>z</sup></li>
+        <li>zoom level 0 = 1 tile</li>
+        <li>zoom level 1 = 4 tiles</li>
+        <li>zoom level 2 = 16 tiles</li>
+        <li>zoom level 4 = 64 tiles</li>
+    </ul>
+</div>
+<div><img src='images/zoom-0.png' />
+    <ul>
+        <li><em class='dark-red'>quick review of tile-based mapping</em></li>
+        <li>1 tile = 256x256px</li>
+        <li><em class='navy'>number of tiles at zoom level(z) = 4<sup>z</sup></em></li>
+        <li>zoom level 0 = 1 tile</li>
+        <li>zoom level 1 = 4 tiles</li>
+        <li>zoom level 2 = 16 tiles</li>
+        <li>zoom level 4 = 64 tiles</li>
+    </ul>
+</div>
+<div><img src='images/zoom-0.png' />
+    <ul>
+        <li><em class='dark-red'>quick review of tile-based mapping</em></li>
+        <li>1 tile = 256x256px</li>
+        <li>number of tiles at zoom level(z) = 4<sup>z</sup></li>
+        <li><em class='navy'>zoom level 0 = 1 tile</em></li>
+        <li>zoom level 1 = 4 tiles</li>
+        <li>zoom level 2 = 16 tiles</li>
+        <li>zoom level 4 = 64 tiles</li>
+    </ul>
+</div>
+<div><img src='images/zoom-1.png' />
+    <ul>
+        <li><em class='dark-red'>quick review of tile-based mapping</em></li>
+        <li>1 tile = 256x256px</li>
+        <li>number of tiles at zoom level(z) = 4<sup>z</sup></li>
+        <li>zoom level 0 = 1 tile</li>
+        <li><em class='navy'>zoom level 1 = 4 tiles</em></li>
+        <li>zoom level 2 = 16 tiles</li>
+        <li>zoom level 4 = 64 tiles</li>
+    </ul>
+</div>
+<div><img src='images/zoom-2.png' />
+    <ul>
+        <li><em class='dark-red'>quick review of tile-based mapping</em></li>
+        <li>1 tile = 256x256px</li>
+        <li>number of tiles at zoom level(z) = 4<sup>z</sup></li>
+        <li>zoom level 0 = 1 tile</li>
+        <li>zoom level 1 = 4 tiles</li>
+        <li><em class='navy'>zoom level 2 = 16 tiles</em></li>
+        <li>zoom level 4 = 64 tiles</li>
+    </ul>
+</div>
+<div><img src='images/zoom-4.png' />
+    <ul>
+        <li><em class='dark-red'>quick review of tile-based mapping</em></li>
+        <li>1 tile = 256x256px</li>
+        <li>number of tiles at zoom level(z) = 4<sup>z</sup></li>
+        <li>zoom level 0 = 1 tile</li>
+        <li>zoom level 1 = 4 tiles</li>
+        <li>zoom level 2 = 16 tiles</li>
+        <li><em class='navy'>zoom level 4 = 64 tiles</em></li>
+    </ul>
+</div>
+<div><em class='dark-red'>swarm</em> server-side</br>home-grown - c++ &amp; python</br>converts wx data to shp/grid/db</br>new data every 1-5 minutes</div>
+<div>
+    <ul>
+        <li><em class='dark-red'>swarm</em> client-side</li>
+        <li>get valid frames</li>
+        <li>load first layer</li>
+        <li>load all valid frames and toggle layers</li>
+        <li>repeat every 5 minutes</li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li><em class='dark-red'>swarm</em> client-side</li>
+        <li><em>get valid frames</em></li>
+        <li>load first layer</li>
+        <li>load all valid frames and toggle layers</li>
+        <li>repeat every 5 minutes</li>
+    </ul>
+</div>
+<div>
+    <pre class='prettyprint'>
+//check out corslite
+//easy cross domain requests!
+//https://github.com/mapbox/corslite
+
+xhr(valid_frame_url, function (err, ret) {
+    if (!err &amp;&amp; ret.responseText) {
+        valid_frames = ret.responseText;
+        //we found the valid frame list!!
+        valid_frames[product_id];
+        /*{
+            product_id: [
+                frame1,frame2,frame3,frame4, frame5, etc.
+            ]
+        }*/
+    }
+});
+    </pre>
+</div>
+<div>
+    <ul>
+        <li><em class='dark-red'>swarm</em> client-side</li>
+        <li>get valid frames</li>
+        <li><em>load first layer</em></li>
+        <li>load all valid frames and toggle layers</li>
+        <li>repeat every 5 minutes</li>
+    </ul>
+</div>
+<div>
+    <pre class='prettyprint'>
+layer = L.tilelayer(
+        'http://swarmcache{s}.wdtinc.com/' + 
+        'swarmweb/tile/{product_id}/' + 
+        '{lastest_frame}/{z}/{x}/{y}' + 
+        '.png?style={style}', {
+    product_id: product_id,
+    latest_frame: valid_frames[product_id][x],
+    subdomains: '012345',
+    style: layer_style
+});
+layer.addTo(map);
+    </pre>
+</div>
+<div>
+    <ul>
+        <li><em class='dark-red'>swarm</em> client-side</li>
+        <li>get valid frames</li>
+        <li>load first layer</li>
+        <li><em>load all valid frames and toggle layers</em></li>
+        <li>repeat every 5 minutes</li>
+    </ul>
+</div>
+<div>
+    <pre class='prettyprint'>
+for(frame in valid_frames[product_id]) {
+    //make me a new layer!
+    //set layer opacity to 0
+    //except for the last frame
+}
+setInterval(function (e) {
+    //set current frame opacity to 0
+    //set next frame opacity to 1
+    }, 80);
+    </pre>
+</div>
+<div>
+    <ul>
+        <li><em class='dark-red'>swarm</em> client-side</li>
+        <li>get valid frames</li>
+        <li>load first layer</li>
+        <li>load all valid frames and toggle layers</li>
+        <li><em>repeat every 5 minutes</em></li>
+    </ul>
+</div>
+<div><img src='images/facepalm.jpg' />do it all <em class='orange'>again!?!?</em></div>
+<div>ease of <em class='light-blue'>accessability</em></div>
+<div>abstract away all the <em class='dark-red'>pain</em></div>
+<div><em>leaflet</em> plugins</div>
+<div>
+    <pre class='prettyprint'>
+swarm_manager = new SwarmManager(map);
+swarm_manager.addProduct({
+    'product_id': 'radar',
+    'swarm_layer_id': 'lowaltradarcontours',
+    'refresh': '300'
+});
+swarm_manager.startAnimation();
+    </pre>
+</div>
+<div>add a <em>new</em> product?</div>
+<div> 
+    <pre class='prettyprint'>
+//seriously...it's this easy!
+swarm_manager.addProduct({
+    'product_id': 'clouds',
+    'swarm_layer_id': 'irsatellitegrid',
+    'refresh': '300',
+    'style': 'enhanced'
+});
+    </pre>
+</div>
+<div><img src='images/geojson.png' />
+    <em class='dark-red'>geojson</em>
+</div>
+<div>
+    <ul>
+        <li><em class='dark-red'>quick review of geojson</em></li>
+        <li>geospacial data format based on JSON</li>
+        <li><em>Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon, and GeometryCollection</em></li>
+        <li>Feature is a geometry with additional properties</li>
+        <li>FeatureCollection is a list of features</li>
+    </ul>
+</div>
+<div><em class='orange'>postgresql</em></br>static files</br>python + flask rest</div>
+<div>
+    <ul>
+        <li><em class='dark-red'>geojson</em></li>
+        <li>check valid alerts types</li>
+        <li>load valid alert polygons</li>
+        <li>load all active message from single click</li>
+        <li>repeat every minute (for significant alerts)</li>
+    </ul>
+</div>
+<div>
+    <pre class='prettyprint'>
+polygon_manager = new PolygonManager(map);
+polygon_manager.addProduct({
+    'product_id': 'wwa',
+    'refresh': 300,
+    'polygon_settings_url': 'data/vtec/vtec_2009.json',
+    'active_polygon_url':'data/active_wwa_types.json',
+    'typed_polygon_url': 'data/poly/wwa_poly_',
+    'polygon_text_url': 'data/text/',
+};
+map.on('POLYGON_CLICKED', function (e) {
+    e.event //original leaflet click event
+    e.messages //you have all the messages for your popup!
+});
+    </pre>
+</div>
+<div><img src='images/bored.gif' />what's <em class='orange'>next?</em></div>
+<div><img src='images/rainbow-drool.png' /><em class='light-blue'>native weather formats</em></div>
+<div><img src='images/wxengine.png' />
+    <ul>
+        <li>best way to view data</li>
+        <li>800x600px image</li>
+        <li>no zooming</li>
+        <li>loop through using js viewer</li>
+    </ul>
+</div>
+<div><img src='images/wxengine.gif' /><em class='navy'>fancy</em></div>
+<div><img src='images/contour.png' />
+</div>
+<div><img src='images/contour_json.png' /><em class='light-blue'>http://bl.ocks.org/mbostock/4241134</em></div>
+<div><img src='images/contour.png' />
+    <ul>
+        <li><em class='navy'>d3.js</em></li>
+        <li>@jasondavies</li>
+        <li>@mbostock</li>
+    </ul>
+</div>
+
+<div>
+    <ul>
+        <li><a class='orange' href='http://www.hdfgroup.org/HDF5/doc/H5.format.html' target='_blank'>hdf5 spec</a></li>
+        <li></br></li>
+        <li>wtf?</li>
+    </ul>
+</div>
+<div><img src='images/contour_json.png' /><em class='light-blue'>typed arrays</em></div>
+<div>
+    <ul>
+        <li><em class='light-blue'>questions?</em></li>
+        <li></br></li>
+        <li>this presentation powered by <em class='dark-red'>github.com/tmcw/big</em></li>
+    </ul>
+</div>
+<script>prettyPrint();</script>
+<body>
